@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CIFLE -o cisfun
+gcc -c  $CIFLE -o cisfun

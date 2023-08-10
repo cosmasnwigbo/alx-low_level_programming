@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CIFLE.s
+gcc -S $CIFLE

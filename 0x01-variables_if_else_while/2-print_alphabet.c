@@ -1,7 +1,7 @@
 #include	<stdio.h>
 /*
- * main	-	Entry	point
- *
+ * main	-	function	print	alphabet	in	lowercase
+ * using	putchar
  * Return:	Always	0	(success)
  *
  */
@@ -15,5 +15,6 @@ int	main(void)
 		putchar(k);
 		k++;
 	}
+	putchar("\n");
 	return	(0);
 }

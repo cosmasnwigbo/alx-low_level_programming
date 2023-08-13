@@ -7,23 +7,24 @@
 
 int	main(void)
 {
-	int	x	=	0;
-	int	y	=	1;
+	int	x;
+	int	y;
 
-	while	(x	<=	8)
+	for	(x	=	'0';	x	<=	'8';	x++)
 	{
-		while	(y	<=	9)
+		for	(y	=	1;	y	<=	'9';	y++)
 		{
-			putchar(x	+	'0');
-			putchar(y	+	'0');
 			if	(y	>	x)
+			{
+				putchar(x);
+				putchar(y);
+			}
+			if	(y	>	x	&&	x	<	'8')
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			y++;
 		}
-		x++;
 	}
 	putchar('\n');
 	return	(0);

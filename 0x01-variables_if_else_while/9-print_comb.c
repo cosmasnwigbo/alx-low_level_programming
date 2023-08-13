@@ -1,26 +1,25 @@
-#include <stdio.h>
+#include	<stdio.h>
 
 /**
-  * main - Prints a serie of numbers with commas
-  *
-  * Return: Always (Success);
-  */
-int main(void)
+  *	main	-	function	print	all	combination	of
+  *	single	digits
+  *	Return:	0
+  **/
+
+int	main(void)
 {
-	int c;
+	int	x	=	0;
 
-	for (c = '0'; c <= '9'; c++)
+	while	(x	<=	9)
 	{
-		putchar(c);
-
-		if (c != '9')
+		putchar(x	+	'0');
+		if	(x	<	9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
+		x++;
 	}
-
 	putchar('\n');
-
-	return (0);
+	return	(0);
 }

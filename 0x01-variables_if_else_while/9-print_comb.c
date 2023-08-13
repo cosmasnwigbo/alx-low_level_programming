@@ -16,13 +16,9 @@ int	main(void)
 		if	(x	<	9)
 		{
 			putchar(',');
-<<<<<<< HEAD
 			putchar(' ');
 		}
-=======
-		}
 		putchar(' ');
->>>>>>> 01858ab6a2aacabb03085097335aa8cc78a8628c
 		x++;
 	}
 	putchar('\n');

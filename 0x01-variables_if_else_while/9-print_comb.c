@@ -1,5 +1,6 @@
-#include	<stdio.h>
 
+<<<<<<< HEAD
+=======
 /**
   *	main	-	function	print	all	combination	of
   *	single	digits
@@ -23,3 +24,4 @@ int	main(void)
 	putchar('\n');
 	return	(0);
 }
+>>>>>>> 6efa543435da0f6e430ed6c97e1f5d39e54d8d11

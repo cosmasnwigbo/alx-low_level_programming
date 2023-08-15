@@ -1,8 +1,9 @@
 #include	"main.h"
 /**
-  * print_alphabet_10x	-	print	all	alphabet	10	times
-  *
-  **/
+ * main	-	print alphabets 10 times
+ * print_alphabet_x10	print	_	print	all	alphabets	10	times
+ *
+ **/
 
 void	print_alphabet_x10(void)
 {

@@ -2,7 +2,7 @@
 
 /**
   * _abs - print the absolute value of a interger
-  * b: integer parameter of _abs to check
+  *@b:  parameter of function _abs
   * Return: b
   *
   **/

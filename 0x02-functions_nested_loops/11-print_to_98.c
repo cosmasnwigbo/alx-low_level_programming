@@ -12,11 +12,11 @@ void print_to_98(int n)
 {
 	int j;
 
-	if ((n > 0) && (n <= 98))
+	if (n <= 98)
 	{
 		for (j = n; j <= 98; j++)
 		{
-			if (j != 98)
+			if (j < 98)
 			{
 				printf("%d, ", j);
 			}
@@ -24,15 +24,13 @@ void print_to_98(int n)
 	}
 	else if (n == 98)
 	{
-		j = n;
-		printf("%d, ", j);
+		printf("%d, ", n);
 	}
 	else if (n > 98)
 	{
 		for (j = n; j >= 98; j--)
 		{
-			_putchar(j + '0');
-			if (j != 98)
+			if (j < 98)
 			{
 				printf("%d, ", j);
 			}

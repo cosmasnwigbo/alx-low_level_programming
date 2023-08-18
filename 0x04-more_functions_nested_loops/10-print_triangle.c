@@ -2,6 +2,7 @@
 
 /**
   * print_triangle - print a triangle
+  * @size: parameter for function print_triangle
   * fellowed by a new line
   * Return: 0
   **/
@@ -9,8 +10,8 @@
 void print_triangle(int size)
 {
 	int i, j;
-	
-	if ( size <= 0)
+
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
@@ -22,7 +23,7 @@ void print_triangle(int size)
 			{
 				if ((i + j) < size)
 				{
-					_putchar('*');
+					_putchar(' ');
 				}
 				else
 				{

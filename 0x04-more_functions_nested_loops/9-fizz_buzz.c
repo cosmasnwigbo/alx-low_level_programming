@@ -2,7 +2,7 @@
 
 /**
   * main - print numbers from 1 to 100
-  * fellowed by a new line 
+  * fellowed by a new line
   * Return: 0
   *
   **/

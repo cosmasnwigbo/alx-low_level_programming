@@ -9,33 +9,31 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	char *dest = s1;
-	char *src  = s2;
 
-	while (*dest != '\0' && *src != '\0')
+	while (*s1 != '\0' && *s2 != '\0')
 	{
-		if (*dest > *src)
+		if (*s1 > *s2)
 		{
-			return (1);
+			return (*s1);
 		}
-		else if (*dest < *src)
+		else if (*s1 < *s2)
 		{
-			return (-1);
+			return (-*s2);
 		}
-		dest++;
-		src++;
+		s1++;
+		s2++;
 	}
-	if (*dest == '\0' && *src == '\0')
+	if (*s1 == '\0' && *s2 == '\0')
 	{
 		return (0);
 	}
-	else if (*dest  == '\0')
+	else if (*s1 == '\0')
 	{
-		return (-1);
+		return (-*s1);
 	}
 	else
 	{
-		return (1);
+		return (*s1);
 	}
 }
 

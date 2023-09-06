@@ -1,22 +1,50 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
- * free_grid - function that frees a 2 dimensional grid.
- * @grid: double pointer to grid
- * @height: the hieght of the grid
- *
- * Return: void
- */
-
-void free_grid(int **grid, int height)
+  *argstostr - concatenates all arguments of the program.
+  *@ac: argument count.
+  *@av: pointer to array of size ac.
+  *Return: NULL if ac == 0 or av == null, Pointer to new string.
+  *NULL on fail.
+  */
+char *argstostr(int ac, char **av)
 {
-	int i;
+	int i, j, k, size;
+	char *arg;
 
-	for (i = 0; i < height; i++)
+	size = 0;
+	k = 0;
+	if (ac == 0 || av == NULL)
+		return (NULL);
+	i = 0;
+	while (i < ac)
 	{
-		free(grid[i]);
+		j = 0;
+		while (av[i][j])
+		{
+			size++;
+			j++;
+		}
+		size++;
+		i++;
 	}
-
-	free(grid);
+	arg = malloc((sizeof(char) * size) + 1);
+	if (arg == NULL)
+		return (NULL);
+	i = 0;
+	while (i < ac)
+	{
+		j = 0;
+		while (av[i][j])
+		{
+			arg[k] = av[i][j];
+			j++;
+			k++;
+		}
+		arg[k] = '\n';
+		k++;
+		i++;
+	}
+	arg[k] = '\0';
+	return (arg);
 }
